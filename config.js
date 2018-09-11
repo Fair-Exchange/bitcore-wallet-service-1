@@ -1,7 +1,7 @@
 var config = {
-  basePath: '/bws/api',
+  basePath: '/bwss/api',
   disableLogs: false,
-  port: 3232,
+  port: 3233,
 
   // Uncomment to make BWS a forking server
   // cluster: true,
@@ -21,20 +21,20 @@ var config = {
 
   storageOpts: {
     mongoDb: {
-      uri: 'mongodb://localhost:27017/bws',
+      uri: 'mongodb://localhost:27017/bwss',
     },
   },
   lockOpts: {
     //  To use locker-server, uncomment this:
     lockerServer: {
       host: 'localhost',
-      port: 3231,
+      port: 13231,
     },
   },
   messageBrokerOpts: {
     //  To use message broker server, uncomment this:
     messageBrokerServer: {
-      url: 'http://localhost:3380',
+      url: 'http://localhost:13380',
     },
   },
   blockchainExplorerOpts: {
@@ -42,13 +42,13 @@ var config = {
       livenet: {
         provider: 'insight',
         url: 'https://insight.bitpay.com:443',
-      },
-      testnet: {
-        provider: 'insight',
-        url: 'https://test-insight.bitpay.com:443',
+      }
+//      testnet: {
+//        provider: 'insight',
+//        url: 'https://test-insight.bitpay.com:443',
         // Multiple servers (in priority order)
         // url: ['http://a.b.c', 'https://test-insight.bitpay.com:443'],
-      },
+//      },
     },
     bch: {
       livenet: {
@@ -56,23 +56,71 @@ var config = {
         //url: 'https://cashexplorer.bitcoin.com',
         url: 'https://bch-insight.bitpay.com:443',
         addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
-      },
-      testnet: {
-        provider: 'insight',
-        url: 'https://test-bch-insight.bitpay.com:443',
-        addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
-      },
-
+      }
+//      testnet: {
+//        provider: 'insight',
+//        url: 'https://test-bch-insight.bitpay.com:443',
+//        addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
+//      },
     },
+    safe: {
+      livenet: {
+        provider: 'insight',
+        url: ['https://explorer.safecoin.org:443', 'https://exp.safc.cc:443'],
+        addressFormat: 'safeaddr',  // copay, cashaddr, or legacy
+      }
+    },
+    btcz: {
+      livenet: {
+        provider: 'insight',
+        url: 'https://explorer.btcz.rocks:443',
+        addressFormat: 'btczaddr',  // copay, cashaddr, or legacy
+      }
+    },
+    anon: {
+      livenet: {
+        provider: 'insight',
+        url: 'https://explorer.anonfork.io:443',
+        addressFormat: 'anonaddr',  // copay, cashaddr, or legacy
+      } 
+    },  
+    zcl: {
+      livenet: {
+        provider: 'insight',
+        url: 'http://explorer.zclassicblue.org:3001',
+        addressFormat: 'zcladdr',  // copay, cashaddr, or legacy
+      }
+    },
+    zel: {
+      livenet: {
+        provider: 'insight',
+        url: ['https://explorer2.zel.cash:443', 'https://explorer.zel.cash:443'],
+        addressFormat: 'zeladdr',  // copay, cashaddr, or legacy
+      }
+    },
+    rvn: {
+      livenet: {
+        provider: 'insight',
+        url: 'https://ravencoin.network:443',
+        addressFormat: 'rvnaddr',  // copay, cashaddr, or legacy
+      }
+    },
+    ltc: {
+      livenet: {
+        provider: 'insight',
+        url: 'https://insight.litecore.io:443',
+        addressFormat: 'ltcaddr',  // copay, cashaddr, or legacy
+      }
+    }
   },
-  pushNotificationsOpts: {
-    templatePath: './lib/templates',
-    defaultLanguage: 'en',
-    defaultUnit: 'btc',
-    subjectPrefix: '',
-    pushServerUrl: 'https://fcm.googleapis.com/fcm',
-    authorizationKey: 'You_have_to_put_something_here',
-  },
+//  pushNotificationsOpts: {
+//    templatePath: './lib/templates',
+//    defaultLanguage: 'en',
+//    defaultUnit: 'btc',
+//    subjectPrefix: '',
+//    pushServerUrl: 'https://fcm.googleapis.com/fcm',
+//    authorizationKey: 'You_have_to_put_something_here',
+//  },
   fiatRateServiceOpts: {
     defaultProvider: 'BitPay',
     fetchInterval: 60, // in minutes

@@ -1,0 +1,8 @@
+Connection established to mongoDB
+Fiat rate service started
+WARN Error retrieving data for Bitstamp Error: read ECONNRESET
+WARN Error retrieving data for Bitstamp     at exports._errnoException (util.js:1050:11)
+WARN Error retrieving data for Bitstamp     at TLSWrap.onread (net.js:582:26)
+WARN Error retrieving data for Bitstamp  { Error: read ECONNRESET
+WARN Error retrieving data for Bitstamp     at exports._errnoException (util.js:1050:11)
+WARN Error retrieving data for Bitstamp     at TLSWrap.onread (net.js:582:26) code: 'ECONNRESET', errno: 'ECONNRESET', syscall: 'read' }
