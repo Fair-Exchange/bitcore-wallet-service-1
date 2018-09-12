@@ -80,7 +80,7 @@ var config = {
     anon: {
       livenet: {
         provider: 'insight',
-        url: 'https://explorer.anonfork.io:443',
+        url: 'http://50.116.27.226:3001',
         addressFormat: 'anonaddr',  // copay, cashaddr, or legacy
       } 
     },  
