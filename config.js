@@ -80,7 +80,7 @@ var config = {
     anon: {
       livenet: {
         provider: 'insight',
-        url: 'https://explorer.anon.zeltrez.io:443',
+        url: 'https://explorer.anonfork.io:443',
         addressFormat: 'anonaddr',  // copay, cashaddr, or legacy
       } 
     },  
