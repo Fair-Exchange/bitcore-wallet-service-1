@@ -1,8 +1,8 @@
 {
   "name": "bitcore-wallet-service-safecoin",
   "description": "A service for Mutisig HD Bitcoin Wallets",
-  "author": "BitPay Inc",
-  "version": "2.4.0",
+  "author": "Safecoin team",
+  "version": "3.0.0",
   "licence": "MIT",
   "keywords": [
     "bitcoin",
@@ -22,15 +22,14 @@
   "dependencies": {
     "async": "^0.9.2",
     "bitcore-lib": "^0.15.0",
-    "bitcore-lib-cash": "^0.17.0",
+    "bitcore-lib-cash": "^0.16.1",
     "bitcore-lib-anon-mini": "git://github.com/fair-exchange/bitcore-lib-anon-mini.git",
     "bitcore-lib-btcz-mini": "git://github.com/fair-exchange/bitcore-lib-btcz-mini.git",
     "bitcore-lib-ltc-mini": "git://github.com/fair-exchange/bitcore-lib-ltc-mini.git",
     "bitcore-lib-rvn-mini": "git://github.com/fair-exchange/bitcore-lib-rvn-mini.git",
-    "bitcore-lib-safe-mini": "git://github.com/fair-exchange/bitcore-lib-safe-mini.git",
+    "bitcore-lib-safecoin": "git://github.com/fair-exchange/bitcore-lib-safecoin.git",
     "bitcore-lib-zcl-mini": "git://github.com/fair-exchange/bitcore-lib-zcl-mini.git",
     "bitcore-lib-zel-mini": "git://github.com/fair-exchange/bitcore-lib-zel-mini.git",
-    "bitgo-utxo-lib": "git+https://github.com/TheTrunk/bitgo-utxo-lib.git",
     "body-parser": "^1.11.0",
     "compression": "^1.6.2",
     "coveralls": "^2.11.2",

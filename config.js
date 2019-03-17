@@ -41,7 +41,7 @@ var config = {
     btc: {
       livenet: {
         provider: 'insight',
-        url: 'https://insight.bitpay.com:443',
+        url: [ 'https://btc.safc.cc:443',  'http://95.216.45.94:3002', 'https://test-insight.bitpay.com:443']
       }
 //      testnet: {
 //        provider: 'insight',
@@ -50,23 +50,23 @@ var config = {
         // url: ['http://a.b.c', 'https://test-insight.bitpay.com:443'],
 //      },
     },
-    bch: {
-      livenet: {
-        provider: 'insight',
-        //url: 'https://cashexplorer.bitcoin.com',
-        url: 'https://bch-insight.bitpay.com:443',
-        addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
-      }
+//    bch: {
+//      livenet: {
+//        provider: 'insight',
+//        //url: 'https://cashexplorer.bitcoin.com',
+//        url: 'https://bch-insight.bitpay.com:443',
+//        addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
+//      }
 //      testnet: {
 //        provider: 'insight',
 //        url: 'https://test-bch-insight.bitpay.com:443',
 //        addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
 //      },
-    },
+//    },
     safe: {
       livenet: {
         provider: 'insight',
-        url: ['https://explorer.safecoin.org:443', 'https://exp.safc.cc:443'],
+        url: ['https://safe.safc.cc:443', 'https://explorer.safecoin.org:443'],
         addressFormat: 'safeaddr',  // copay, cashaddr, or legacy
       }
     },
@@ -77,41 +77,55 @@ var config = {
         addressFormat: 'btczaddr',  // copay, cashaddr, or legacy
       }
     },
-    anon: {
+/*    anon: {
       livenet: {
         provider: 'insight',
-        url: 'https://explorer.anonfork.io:443',
+        url: [ 'http://95.216.45.94:3006','https://explorer.anonfork.io:443'],
         addressFormat: 'anonaddr',  // copay, cashaddr, or legacy
-      } 
-    },  
+      }
+    },
     zcl: {
       livenet: {
         provider: 'insight',
-        url: 'http://explorer.zclassicblue.org:3001',
+        url: [ 'http://95.216.45.94:3007', 'http://explorer.zclassicblue.org:3001'],
         addressFormat: 'zcladdr',  // copay, cashaddr, or legacy
       }
-    },
+    },  */
     zel: {
       livenet: {
         provider: 'insight',
-        url: ['https://explorer2.zel.cash:443', 'https://explorer.zel.cash:443'],
+        url: [/*'https://zel.safc.cc:443',*/ 'https://explorer2.zel.cash:443', 'https://explorer.zel.cash:443'],
         addressFormat: 'zeladdr',  // copay, cashaddr, or legacy
+      }
+    },
+/*    zen: {
+      livenet: {
+        provider: 'insight',
+        url: 'https://explorer.zen-solutions.io:443',// 'https://explorer.zensystem.io:443',
+        addressFormat: 'zenaddr',  // copay, cashaddr, or legacy
+      }
+    },*/
+    ltc: {
+      livenet: {
+        provider: 'insight',
+        url: ['https://ltc.safc.cc:443', 'https://litecoinblockexplorer.net:443', 'https://insight.litecore.io:443'],
+        addressFormat: 'ltcaddr'  // copay, cashaddr, or legacy
+      }
+    },
+    rito: {
+      livenet: {
+        provider: 'insight',
+        url: ['https://rito.safc.cc:443','http://95.216.45.94:3005'],
+        addressFormat: 'ritoaddr'  // copay, cashaddr, or legacy
       }
     },
     rvn: {
       livenet: {
         provider: 'insight',
-        url: 'https://ravencoin.network:443',
+        url: 'https://rvn.safc.cc:443',
         addressFormat: 'rvnaddr',  // copay, cashaddr, or legacy
       }
     },
-    ltc: {
-      livenet: {
-        provider: 'insight',
-        url: 'https://insight.litecore.io:443',
-        addressFormat: 'ltcaddr',  // copay, cashaddr, or legacy
-      }
-    }
   },
 //  pushNotificationsOpts: {
 //    templatePath: './lib/templates',
@@ -153,4 +167,3 @@ var config = {
   //  api_key: xxx,
   // });
 };
-module.exports = config;
