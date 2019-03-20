@@ -96,5 +96,7 @@
       "name": "Alexander Shatovskiy",
       "email": "eternity@safecoin.org"
     }
-  ]
+  ],
+ "license": "MIT"
+}
 }
