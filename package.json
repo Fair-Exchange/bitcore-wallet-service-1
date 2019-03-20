@@ -29,7 +29,7 @@
     "bitcore-lib-rvn-mini": "git://github.com/fair-exchange/bitcore-lib-rvn-mini.git",
     "bitcore-lib-safecoin": "git://github.com/fair-exchange/bitcore-lib-safecoin.git",
     "bitcore-lib-zcl-mini": "git://github.com/fair-exchange/bitcore-lib-zcl-mini.git",
-    "bitcore-lib-zel": "git://github.com/eternitytula/bitcore-lib-zel.git",
+    "bitcore-lib-zel": "git+https://github.com/zelcash/bitcore-lib-zel.git",
     "body-parser": "^1.11.0",
     "compression": "^1.6.2",
     "coveralls": "^2.11.2",
